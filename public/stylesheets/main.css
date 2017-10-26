@@ -1,0 +1,177 @@
+@import url("whitespace-reset.css");
+
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+	/* background-color:black !important; */
+	background-image: url("../images/background.jpg")
+}
+
+h1 {
+margin-top: 2%;
+font: bold 3em 'Bevan', cursive, sans-serif;
+color: #ffffff;
+}
+
+input[type="text"] {
+	font-size: 1.5em;
+}
+.container {
+	margin: 2% auto 0 auto;
+}
+
+.search-results {
+  padding-top: 50px;
+}
+
+.search-results .row {
+  margin-bottom: 20px;
+}
+
+.navbar-form {
+	margin: 0 auto;
+}
+.box {
+  height: 200px;
+  text-align: center;
+	padding-top: 30px;
+}
+
+
+.search-results {
+	width: 80%;
+	margin: 0 auto;
+}
+.row {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+
+
+.input-group-btn {
+	display: flex;
+}
+/* Clearfix */
+.row::before,
+.row::after {
+  display: table;
+  content: '';
+}
+
+.row::after {
+  clear: both;
+}
+
+.col-3 {
+  float: left;
+  padding-left: 1.04166666%;
+  padding-right: 1.04166666%;
+}
+
+/* Mobile defaults */
+.col-3 {
+  width: 100%;
+}
+
+@media only screen and (min-width: 320px) {
+
+	h1 {
+		font-size: 2em;
+	}
+
+	input[type="text"] {
+		font-size: 1em;
+	}
+
+	.navbar-form {
+		padding-left: 25px;
+		margin: 0 auto;
+	}
+
+	.form-control {
+		border-radius: 5px;
+	}
+
+	.input-group-btn {
+		display: flex;
+		width: 0px;
+	}
+}
+
+@media only screen and (min-width: 375px) {
+	h1 {
+		font-size: 2em;
+	}
+
+	.navbar-form {
+		width: 80%;
+		margin: 0 auto;
+		padding-left: 20px;
+	}
+
+	.input-group-btn {
+		display: flex;
+		width: 0px;
+	}
+}
+
+@media only screen and (min-width: 425px) { 
+	.navbar-form {
+		/* width: 100%; */
+		margin: 0 auto;
+		padding-left: 40px;
+	}
+	
+}
+
+
+/* Non-mobile, grid */
+@media only screen and (min-width: 640px) {
+  /* 3 columns, 3/12 in % */
+  .col-3 {
+		width: 25%;
+  }
+
+  /* 4 columns, 4/12 in % */
+  .col-4 {
+    width: 33.33%;
+  }
+
+  /* 6 columns 6/12 in % */
+  .col-6 {
+    width: 50%;
+  }
+
+  /* 12 columns, 12/12 */
+  .col-12 {
+    width: 100%;
+	}
+
+	h1 {
+		font-size: 4em;
+	}
+
+	.navbar-form {
+		margin: 0 auto;
+	}
+
+	.input-group {
+		width: 100%;
+	}
+
+	.container {
+		padding-right: 40px;
+	}
+
+	input[type="text"] {
+		font-size: 1.7em;
+	}
+	
+}
+
+
+
