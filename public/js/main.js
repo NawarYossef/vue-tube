@@ -9,13 +9,13 @@ function getDataFromApi(string) {
 		method: 'GET',
 		url: url,
 		data: { 
-		part : 'snippet',
-		key: key,
-		q: string,
-		'maxResults': '16'
+			part : 'snippet',
+			key: key,
+			q: string,
+			'maxResults': '16'
 		},
 		dataType: 'jsonp',	
-		success: (data) => {
+		success: data => {
 			showImages(data);
 			goToVideo(data);
 		}
@@ -34,8 +34,8 @@ function showImages(data) {
 }
 
 function getSearchTerm() {
-	$("button").click((e) => {
-		let searchTerm = ($('.navbar-form :input').val());
+	$("button").click( e => {
+		const searchTerm = $('.navbar-form :input').val();
 		e.preventDefault();
 		getDataFromApi(searchTerm);
 	})
@@ -43,11 +43,10 @@ function getSearchTerm() {
 
 function goToVideo(data) {
 	$(".anchor").each((idx, ele) => {
-		let id = data.items[idx].id.videoId;
-		let url = 'https://www.youtube.com/watch?v=';
+		const id = data.items[idx].id.videoId;
+		const url = 'https://www.youtube.com/watch?v=';
 		$(ele).attr("href", `${url}${id}`);	
 	})
 }
 
-getSearchTerm();
-
+$(getSearchTerm)

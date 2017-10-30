@@ -9,19 +9,16 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/NawarYossef/test-heroku.git"
+    "url": "git+https://github.com/NawarYossef/vue-tube.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/NawarYossef/test-heroku/issues"
+    "url": ""
   },
-  "homepage": "https://github.com/NawarYossef/test-heroku#readme",
+  "homepage": "https://github.com/NawarYossef/vue-tube#readme",
   "dependencies": {
-    "cheerio": "^1.0.0-rc.2",
     "express": "^4.15.3",
-    "jquery": "^3.2.1",
-    "jsdom": "^11.1.0",
     "lodash": "^4.17.4"
   },
   "devDependencies": {
