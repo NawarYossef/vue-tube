@@ -24,16 +24,15 @@ input[type="text"] {
 	margin: 2% auto 0 auto;
 	width: 100%;
 	text-align: center;
+	/* over write bootstrap default padding */
 	padding-right: 0px;
 }
 
 .search-results {
-  padding-top: 50px;
+	padding-top: 50px;
 }
 
-.search-results .row {
-  margin-bottom: 20px;
-}
+
 
 form {
 	width: 100%;
@@ -45,25 +44,50 @@ form {
 .box {
   height: 200px;
   text-align: center;
-	padding-top: 30px;
 }
 
+.add-background-for-results {
+	background-color: rgba(243, 243, 243, 0.4);
+}
 
 .search-results {
 	width: 80%;
-	margin: 0 auto;
+	height: 100%;
+	margin: 20px auto 0 auto;
 }
 
 .row {
   max-width: 1000px;
-  margin: 0 auto;
+	margin: 0 auto;
+	text-align: center;		
 }
 
+.add-border-to-img {
+	border:1px solid #ffffff !important;
+}
 
+aside {
+	width: 20%;
+	margin: 0 auto;
+	text-align: center;
+}
+aside p {
+	color: #ffffff;
+}
 
-/* .input-group-btn {
-	display: flex;
-} */
+img {
+	max-width: 100%;
+	height: auto;
+	padding: 1px;
+	opacity: 1.0;
+	filter: alpha(opacity=100); /* For IE8 and earlier */
+}
+
+img:hover {
+	opacity: 0.8;
+	filter: alpha(opacity=80); /* For IE8 and earlier */
+}
+
 /* Clearfix */
 .row::before,
 .row::after {
@@ -100,7 +124,9 @@ form {
 		border-radius: 5px;
 	}
 
-
+	.col-3 {
+		margin-bottom: 10px;
+	}
 }
 
 @media only screen and (min-width: 375px) {
@@ -143,7 +169,7 @@ form {
 	}
 
 	input[type="text"] {
-		font-size: 1.7em;
+		font-size: 1.25em;
 	}
 	
 }

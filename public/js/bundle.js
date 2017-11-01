@@ -17,21 +17,26 @@ function getDataFromApi(string) {
 		},
 		dataType: 'jsonp',	
 		success: data => {
+			// resultDefaultState();
 			showImages(data);
-			goToVideo(data);
+			mapAllVideo(data);
+			SearchResulstCount(data);
+			addThumbnailsBackground();
 		}
 	}) 
 }
 
 function showImages(data) {
-		$(".box").each((idx, ele) => {
-
-			//each image will inherit its container's width and that way images will not overflow into each other.
-			$(ele).css("width", "100%");
-			$(ele).css("height", "100%");
-			
-			$(ele).attr("src", data.items[idx].snippet.thumbnails.medium.url);
-		})
+	const images = data.items.map(item => {
+		return (
+			`<div class="col-3">
+			 	<a href="" rel="modal:open" class="anchor" target="_blank" >
+					<img src=${item.snippet.thumbnails.medium.url} class="box"></img>
+				</a>
+			</div>`
+		)
+	})
+	$(".row").append(images)
 }
 
 function getSearchTerm() {
@@ -42,7 +47,7 @@ function getSearchTerm() {
 	})
 }
 
-function goToVideo(data) {
+function mapAllVideo(data) {
 	$(".anchor").each((idx, ele) => {
 		const id = data.items[idx].id.videoId;
 		const url = 'https://www.youtube.com/watch?v=';
@@ -50,5 +55,24 @@ function goToVideo(data) {
 	})
 }
 
+function SearchResulstCount(data) {
+	const text = `${data.items.length} Results`
+	$("p").text(text);
+}
+
+function resultDefaultState() {
+	$("span > p").text('');
+}
+
+function addThumbnailsBackground() {
+	$("section").addClass("add-background-for-results");
+}
+
 $(getSearchTerm)
+
+// <div class="col-3">
+// <a href="#ex1" rel="modal:open" class="anchor" target="_blank" >
+// 	<img src="" class="box"></img>
+// </a>
+// </div>
 },{}]},{},[1]);
