@@ -31,7 +31,7 @@ function showImages(data) {
 		return (
 			`<div class="col-3">
 			 	<a href="" rel="modal:open" class="anchor" target="_blank" >
-					<img src=${item.snippet.thumbnails.medium.url} class="box"></img>
+					<img src=${item.snippet.thumbnails.medium.url} class="box"  role="presentation"></img>
 				</a>
 			</div>`
 		)
