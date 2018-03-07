@@ -1,0 +1,197 @@
+/* @import url("whitespace-reset.css"); */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 1em;
+  margin: 0px;
+}
+
+/* nav */
+.main-nav-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right:0;
+  padding: 30px 80px;
+  background-color: rgb(255, 255, 255);
+  border-bottom: 1px solid #DDDDDD;
+}
+
+nav ul {
+  margin: 0 0;
+  padding: 10px 20px;
+}
+
+nav .right {
+  float: right;
+}
+
+nav .left {
+  float: left;
+}
+
+
+nav img {
+  float: left;
+  margin: 0 0;
+}
+
+nav ul {
+  font-size: 0.9em;
+}
+
+nav ul li {
+  font-weight: bold;
+  color: #666666;
+}
+
+nav .left li {
+  display: inline;
+  padding-left: 30px;
+}
+
+nav .right li {
+  display: inline;
+  padding-left: 10px;
+}
+
+.login-link {
+  border-right: 1px solid gray;
+}
+
+.items-link {
+
+}
+
+
+/* ////////////////////////////// */
+/* header-info */
+.header-info {
+  background: url("../images/slide-image-6.jpg") no-repeat;
+  color: black;
+  height: 635px;
+  width: 100%;
+}
+
+.banner-text {
+  font-size: 2em;
+  padding-top: 200px;
+  color: #ffffff;
+  width: 70%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.banner-text hr {
+  width:  45%;
+  height: 6px;
+  background-color: #ffffff;
+  border: 0 none;
+  color: #ffffff; 
+}
+
+.header-info button {
+  display: block;
+  width: 15%;
+  height: 50px;
+  margin: 30px auto 0 auto;
+  color: #5c5a54;
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+/* ////////////////////////// */
+/* products */
+.products {
+  width: 100%;
+  margin-bottom: 30px;
+  display: inline-block;
+}
+
+.products-heading {
+  width: 100%;
+  text-align: center;
+}
+
+h2 {
+  font-size: 1.6em;
+}
+
+.products hr {
+  width: 10%;
+  height: 2px;
+  background-color: #161515;
+  border: 0 none;
+  color: #1a1818; 
+}
+
+.products-heading p {
+  color: #808080;
+  font-family: Georgia;
+  font-style: italic;
+}
+
+.product {
+  width: 25%;
+  float: left;
+  text-align: center;
+}
+
+.product img {
+  width: 70%;
+}
+
+.product > h3 {
+  margin: 0 0 7px 0;
+}
+
+.product > p {
+  margin: 0px;
+  color: #808080;
+  font-family: Georgia;
+  font-style: italic;
+}
+
+/* /////////// */
+/* cornerstones */
+.cornerstones {
+  width: 90%;
+  margin-top: 70px;
+  margin: 0 auto;
+}
+
+.cornerstones .products-heading {
+  margin-bottom: 60px;
+}
+
+.cornerstones hr {
+  width: 10%;
+  height: 2px;
+  background-color: #161515;
+  border: 0 none;
+  color: #1a1818; 
+}
+
+.flavor-wrapper {
+  width: 33%;
+  float: left;
+  text-align: center;
+  position: relative;
+}
+
+.flavors-image {
+  width: 93%;
+}
+
+.flavor-wrapper h3 {
+  position: absolute;
+  top: 35%;
+  left: 0%;
+  right: 0%; 
+  padding: 30px;
+  background-color: #ffffff;
+
+}
+
